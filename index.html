@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Timeline</title>
+
+  <!-- TimelineJS -->
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <link href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <style>
+    .tl-headline {
+      color: #1a3d7c !important;
+      font-size: 30px !important;
+    }
+
+    .tl-text-content {
+      color: #333333 !important;
+      font-size: 16px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="timeline-embed" style="width: 100%; height: 600px;"></div>
+
+<script>
+  var timeline = new TL.Timeline(
+    'timeline-embed',
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ_GDZ5l4efbz2AkM3NjzlS_nF3gvhYjVkK6yYvwZ63NXMTwa8h34lWIHftuhWJfeTqwgBWicYs7V8/pubhtml'
+  );
+</script>
+
+</body>
+</html>
